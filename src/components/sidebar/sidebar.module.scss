@@ -1,0 +1,101 @@
+@import '../../master';
+
+#sidebar {
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    left: 39%;
+    margin-left: -570px;
+    z-index: 50;
+    width: 100%;
+    align-items: center;
+
+    #nav {
+        padding-left: 0%;
+        margin: 0 auto;
+        list-style: none;
+        position: relative;
+        background-color: transparent;
+        transition: 0.3s;
+        cursor: pointer;
+    
+        li {
+            float: left;
+        }
+    
+        a {
+            display: block;
+            text-align: center;
+            width: 280px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 20px;
+            color: black;
+            border-radius: 10px;
+            background-color: transparent;
+
+        }
+    
+        a:hover {
+            color: $primaryPurple;
+        }
+    }
+
+    li.active {
+        background-color: $lightPurple;
+    
+        a {
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 980px){
+    #sidebar {
+        width: 50%;
+        margin-left: -230px;
+    }
+
+    #nav a {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #sidebar {
+        left: 45%;
+    }
+
+    #nav a {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #sidebar {
+        left: 50%;
+    }
+
+    #nav a {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #sidebar{
+        left: 58%;
+    }
+    #nav a {
+        width: 200px;
+    }
+}

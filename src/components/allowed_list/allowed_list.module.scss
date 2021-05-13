@@ -1,0 +1,170 @@
+@import '../../master';
+
+.allowedListTitle {
+    font-size: 30px;
+}
+
+.allowedListBlockie {
+    width: 6%;
+    text-align: center;
+}
+
+.allowedListName {
+    width: 40%;
+    font-size: 20px;
+}
+
+.allowedListAddress {
+    font-size: 20px;
+    margin: 0 10.5em;
+}
+
+@media screen and (max-width: 990px) {
+    .allowedListName {
+        font-size: 15px;
+    }
+    
+    .allowedListAddress {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .allowedListName {
+        font-size: 12px;
+    }
+    
+    .allowedListAddress {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .allowedListName {
+        font-size: 8px;
+    }
+    
+    .allowedListAddress {
+        font-size: 8px;
+    }
+}
+
+
+.allowedListTable {
+    background-color: #FFFFFF;
+    border-right: white;
+    border-left: white;
+    border-collapse: collapse;
+    font-weight: normal;
+    border-radius: 9px;
+    width: fit-content;
+
+    th {
+        background-color: white;
+        border-left: white;
+        border-right: white;
+        border-collapse: collapse;
+        height: 47px;
+        font-weight: bold;
+        border-radius: 9px;
+    }
+
+    td {
+        background-color: #FFFFFF;
+        border-right: white;
+        border-left: white;
+        border-collapse: collapse;
+        height: 47px;
+        font-weight: normal;
+        border-radius: 9px;
+        width: 970px;
+    }
+
+}
+
+
+
+.addToallowedList {
+    position: relative;
+
+    .addressBox {
+        position: relative;
+        box-sizing: content-box;
+        width: 60%;
+        margin-top: 30px;
+        font-size: 30px;
+        margin-left: 0px;
+        text-align: center;
+        top: 10%;
+        border-bottom: 5px black solid;
+    }
+
+    .address {
+        border-radius: 10px;
+        position: relative;
+        text-align: left;
+        display: block;
+        color: black;
+        padding: 13px;
+        left: -0.2%;
+        margin-top: 30px;
+        width: 48%;
+        transition: all 0.2s;
+        align-items: left;
+        background-color: $primaryWhite;
+    }
+    
+    .address:hover {
+        border-color: $primaryPurple;
+    }
+
+    .name {
+        border-radius: 10px;
+        position: relative;
+        display: block;
+        left: 50%;
+        width: 48%;
+        text-align: left;
+        background-color: $primaryWhite;
+        padding: 13px;
+        margin-top: -57px;
+    }
+    
+    .name:hover {
+        border-color: $primaryPurple;
+    }
+
+    
+    .addBtn {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        border: 2px $primaryBlack solid;
+        border-radius: 10px;
+        // left: 83%;
+        top: -12%;
+        width: 140px;
+        margin-right: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        border: 2px $primaryBlack solid;
+        color: white;
+        background-color: $primaryPurple;
+        padding: 11px;
+        transition: all 0.2s;
+        transition-duration: 0.4s;
+        text-align: center;
+        text-decoration: none;
+        font-family: $fontStyle;
+        float: right;
+    }
+
+    .addBtn:hover {
+        text-align: center;
+        background-color: lightgray;
+        color: $primaryPurple;
+    }
+}
+
+
+

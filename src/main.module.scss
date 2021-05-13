@@ -1,0 +1,91 @@
+@import 'master';
+
+body,
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#list {
+    text-align: center;
+    width: 280px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    color: black;
+    background-color: transparent;
+    left: 30%;
+
+    li {
+        padding: 0.5em;
+        margin: 0 6em;
+    }
+}
+
+.main {
+    margin-left: 10%;
+    margin-top: 70px;
+    font-size: 12px;
+
+    .mainBlueBox {
+        display: block;
+        border-radius: 10px;
+        border: 30px $lightBlue solid;
+        background-color: $lightBlue;
+        opacity: 0.7;
+        position: relative;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        margin-left: 55px;
+        margin-bottom: 1px;
+        padding-bottom: 40px;
+
+        @media screen and (max-width: 700px){
+            margin-left: 10px;
+        }
+    }
+}
+
+input, textarea {
+    position: relative;
+    left: 50%;
+    top: 10%;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    border: 2px $primaryBlack solid;
+    padding: 13px 20px;
+    width: 50%;
+    color: $primaryBlack;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    align-items: center;
+    background-color: white;
+    margin-top: -57px;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+canvas {
+    border-radius: 50%;
+}
+
+

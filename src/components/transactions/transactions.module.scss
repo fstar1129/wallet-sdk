@@ -1,0 +1,203 @@
+@import '../../master';
+
+#pending {
+    font-family: $fontStyle;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    line-height: 1.42857;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newTrans {
+    position: relative;
+    box-sizing: content-box;
+    width: 30%;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 0px;
+    text-align: center;
+    top: 10%;
+    border-bottom: 5px black solid;
+}
+
+
+.transactionTable {
+    background-color: #FFFFFF;
+    border-right: white;
+    border-left: white;
+    border-collapse: collapse;
+    font-weight: normal;
+    border-radius: 9px;
+    
+    .transactionRow {
+        cursor: pointer;
+        font-size: large;
+        border-top: 1px solid lightgrey;
+    }
+
+    tbody {
+        display: inline-block;
+        width: 100%;
+
+        tr {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-right: -60px;
+
+            th {
+                border-collapse: collapse;
+                font-weight: bold;
+                border-radius: 9px;
+                border: none;
+                flex: 1;
+                padding: 15px;
+            }
+            
+            td {
+                flex: 1;
+                font-size: 20px;
+                border-collapse: collapse;
+                font-weight: normal;
+                border-radius: 9px;
+                width: 970px;
+                border: none;
+                padding: 13px;
+            }
+
+            .transactionAmount {
+                padding-left: 55px;
+            }
+        }
+
+        .transactionStatus {
+            padding-left: -20px;
+        }
+        
+        tr:hover {
+            background-color: rgb(231, 230, 230);
+        }
+
+        .headingRow:hover {
+            background-color: #FFFFFF;
+        }
+    }
+    
+    .composition {
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: auto;
+        box-sizing: content-box;
+        background-color: #FFFFFF;
+        padding: 2%;
+        font-size: 15px;
+        font-weight: 700;
+        border: 1px solid lightgray;
+    }
+}
+.startTrans {
+    .address {
+        border-radius: 10px;
+        position: relative;
+        text-align: left;
+        display: block;
+        color: black;
+        padding: 13px;
+        left: 1%;
+        margin-top: 30px;
+        width: 47%;
+        transition: all 0.2s;
+        align-items: left;
+        background-color: #fafbfc;
+    }
+    
+    .address:hover {
+        border-color: $primaryPurple;
+    }
+    
+    .exchangeAmt {
+        border-radius: 10px;
+        position: relative;
+        display: block;
+        left: 50%;
+        width: 48%;
+        text-align: left;
+        background-color: #fafbfc;
+        padding: 13px;
+        margin-top: -57px;
+    }
+    
+    .exchangeAmt:hover {
+        border-color: $primaryPurple;
+    }
+
+    .connected {
+        position: relative;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .startBtn {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        border: 2px $primaryBlack solid;
+        border-radius: 10px;
+        float: right;
+        top: -12%;
+        width: 150px;
+        font-size: 15px;
+        font-weight: 700;
+        border: 2px $primaryBlack solid;
+        color: white;
+        background-color: $primaryPurple;
+        padding: 5px;
+        transition: all 0.2s;
+        transition-duration: 0.4s;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    .startBtn:hover {
+        background-color: lightgray;
+        color:  $primaryPurple;
+        text-align: center;
+    }
+    
+    
+    #status {
+        text-shadow: none;
+    }
+}
+
+
+.signBtn {
+    display: block;
+    background-color: $hoverPurple;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px $primaryBlack solid;
+    transition: all 0.2s;
+    transition-duration: 0.4s;
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+    font-family: $fontStyle;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.signBtn:hover {
+    color: $hoverPurple;
+    background-color: lightgray;
+}
+
+

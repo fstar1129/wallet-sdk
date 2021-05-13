@@ -1,0 +1,296 @@
+@import '../../master';
+
+.Top-header {
+    font-family: $fontStyle;
+    text-shadow: 2px 2px lightskyblue;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: $primaryPurple;
+}
+
+#profile {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.profile-Box {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px white solid;
+    margin-top: 10px;
+    z-index: 100;
+    box-shadow: 8px 5px 20px #888888
+}
+
+
+#username {
+    /* color: rgb(167, 163, 163); */
+    color: $primaryBlack;
+    font-size: 10px;
+    font-weight: 800;
+    position: relative;
+    text-shadow: none;
+    text-align: left;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+#user-Address {
+    color: $primaryBlack;
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    text-shadow: none;
+    text-align: left;
+    padding-top: 10px;
+    border-top: 1px lightgray solid;
+    text-decoration: none;
+}
+.icon-display {
+    position: relative;
+    text-shadow: none;
+    text-align: left;
+    margin: 5px;
+    margin-bottom: 10px;
+    color: $primaryBlack;
+    font-size: 15px;
+}
+.user-display {
+    color: $primaryBlack;
+    font-family: $fontStyle;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    text-shadow: none;
+    text-align: left;
+    margin: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.far {
+    font-size: 14px;
+    text-shadow: none;
+    border-top: 1px lightgray solid;
+    padding-top: 10px;
+}
+.far:hover {
+    color: black;
+}
+
+.far .clipboard-hov {
+    visibility: hidden;
+    font-family: $fontStyle;
+    width: 30px;
+    text-shadow: none;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    top: 37%;
+    right: 0%;
+    margin-left: -60px;
+    opacity: 1;
+    font-size: 10px;
+
+}
+  
+.far .clipboard-hov::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  gray transparent transparent transparent;
+}
+  
+.far:hover .clipboard-hov {
+    visibility: visible;
+    opacity: 1;
+}
+
+#user-Address .copy-hov {
+    visibility: hidden;
+    font-family: $fontStyle;
+    width: 260px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+    z-index: 1;
+    top: -30%;
+    right: 6%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 10px;
+}
+  
+#user-Address .copy-hov::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  gray transparent transparent transparent;
+  }
+  
+#user-Address:hover .copy-hov {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.logout-Btn {
+    display: block;
+    box-sizing: content-box;
+    border: 1px gray solid;
+    border-radius: 3px;
+    width: auto;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: $primaryBlack;
+    transition: all 0.2s;
+    text-shadow: none;
+    margin-top: 15px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.logout-Btn:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.login-Box {
+    padding: 1%;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    height: 230px;
+    text-align: center;
+    color: $primaryPurple;
+    text-shadow: 2px 2px lightskyblue;
+}
+
+.login {
+    /* border: 3px solid rgb(45, 0, 128); */
+    background-image: url("../../assets/loginImage.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 230px; */
+    width: 100%;
+    text-align: center;
+}
+
+#status {
+    text-shadow: none;
+}
+
+.user-email {
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    border-radius: 7px;
+    border: 2px #282c34 solid;
+    background-color: white;
+    padding: 10px 20px;
+    width: 100%;
+    left: 1%;
+    top: auto;
+    color: #282c34;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    align-items: center;
+}
+
+.user-email:hover {
+    border-color: $primaryPurple;
+}
+
+.log-1 {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 180px;
+    margin-top: 25px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    border: 3px lightgray solid;
+    color: #282c34;
+    background-color: white;
+    padding: 8px;
+    transition: all 0.2s;
+    transition-duration: 0.4s;
+    text-align: center;
+    left: 32%;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.log-1:hover {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+.oAuth {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-right: 180px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    color: #282c34;
+    background-color: white;
+    padding: 5px;
+    transition: all 0.2s;
+    transition-duration: 0.4s;
+    text-align: center;
+    left: 33%;
+    border: none;
+    text-shadow: none;
+}
+
+.oAuth:hover {
+    color: rgb(143, 140, 140);
+}
